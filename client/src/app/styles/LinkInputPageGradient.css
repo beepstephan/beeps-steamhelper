@@ -1,0 +1,31 @@
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+  
+.bg-animated-gradient {
+  background: linear-gradient(-45deg, #051540, #111827, #042365);
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
+}
+
+.logo-animated-gradient {
+  background: linear-gradient(-45deg, #4f0771, #111827, #790796);
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
+}
+
+.pulse-loader {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #00FFFF, #FF00FF);
+  border-radius: 50%;
+  animation: pulse 1.5s infinite ease-in-out;
+}
